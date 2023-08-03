@@ -1,0 +1,326 @@
+/* .main {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #e6e6e6;
+}
+
+.normal {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.normal li {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.normal li:last-child {
+  border-bottom: none;
+}
+
+.normal li.editing {
+  border-bottom: none;
+  padding: 0;
+}
+
+.normal li.editing .edit {
+  display: block;
+  width: 506px;
+  padding: 13px 17px 12px 17px;
+  margin: 0 0 0 43px;
+}
+
+.normal li.editing .view {
+  display: none;
+}
+
+.normal li .toggle {
+  text-align: center;
+  width: 40px;
+  auto, since non-WebKit browsers doesn't support input styling
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  Mobile Safari
+  border: none;
+  appearance: none;
+}
+
+.normal li .toggle:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+}
+
+.normal li .toggle:checked:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+.normal li label {
+  white-space: pre-line;
+  word-break: break-all;
+  padding: 15px 60px 15px 15px;
+  margin-left: 45px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+.normal li.completed label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.normal li .destroy {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+.normal li .destroy:hover {
+  color: #af5b5e;
+}
+
+.normal li .destroy:after {
+  content: '×';
+}
+
+.normal li:hover .destroy {
+  display: block;
+}
+
+.normal li .edit {
+  display: none;
+}
+
+.normal li.editing:last-child {
+  margin-bottom: -1px;
+}
+
+.toggleAll {
+  position: absolute;
+  top: -55px;
+  left: -12px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  border: none;
+  Mobile Safari
+}
+
+.toggleAll:before {
+  content: '❯';
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px 10px 27px;
+}
+
+.toggleAll:checked:before {
+  color: #737373;
+}
+
+
+  Hack to remove background from Mobile Safari.
+  Can't use it globally since it destroys checkboxes in Firefox
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .toggleAll,
+  .normal li .toggle {
+    background: none;
+  }
+  .normal li .toggle {
+    height: 40px;
+  }
+  .toggleAll {
+    transform: rotate(90deg);
+    appearance: none;
+  }
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+/* ----------- */
+.loginWarpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .loginBox {
+    max-width: 450px;
+    width: 100%;
+    padding: 50px 25px 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.20);
+    background-color: #333;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .loginBox img {
+    margin-bottom: 25px;
+  }
+  
+  .loginBox input {
+    line-height: 45px;
+    border: 1px #ddd solid;
+    box-shadow: none;
+    font-size: 14px;
+    background: #fff;
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .loginBox input:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(113, 167, 63, 0.5);
+    outline: none;
+  }
+  
+  .loginBox button {
+    background-color: #71a73f;
+    color: #fff;
+    line-height: 45px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 35px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* ------------------------------- */
+  header {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .userBox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logOut img {
+    width: 35px;
+    margin-left: 10px;
+  }
+  
+  .listBox {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .listBox img {
+    width: 150px;
+    margin-right: 15px;
+  }
+  
+  .listContent h3 img {
+    width: 25px;
+    margin-right: 5px;
+  }
+  
+  .listBox a {
+    color: #111;
+    text-decoration: none;
+  }
+  
+  .listBox a .listItems {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+  }
+  
+  .listContent h2 {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .listContent h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #666;
+  }
+  
+  img.arrowIcon {
+    width: 30px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* ------------------------ */
+  
+  .singleList.listBox a .listItems {
+    display: block;
+    align-items: unset;
+    padding: 0;
+  }
+  
+  .singleList.listBox .listItems>img {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  
+  .singleList.listBox .listContent h2 {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+  
+  .singleList.listBox p {
+    font-size: 14px;
+    color: #999;
+    line-height: 23px;
+    text-align: justify;
+  }
+  
+  .backToPage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+   .backToPage img {
+    width: 15px;
+    margin-right: 5px;
+  }

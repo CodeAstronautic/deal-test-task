@@ -1,1 +1,0 @@
-# deal-test-task
